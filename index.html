@@ -5,117 +5,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lagoona</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header class="header">
-        <div class="container">
+    <header class="header" id="home">
+        <nav class="header-nav ">
+        <div class="container header-container flex">
             <a href="#" class="header-logo">
                 <img src="img/logo.svg" class="header-logo" alt="Logo">
             </a>
             <a href="tel:+74953225448" class="contacts-item-link">
                 +7-495-322-54-48
             </a>
-            <button class="head-btn">
+            <button class="head-btn-top">
                 Личный кабинет
             </button>
-            <nav class="header-nav">
-                <ul class="header-list">
+        </div>
+                <div class="container header-container-2 flex">
+                <ul class="list-reset header-list flex">
                     <li class="header-list-item">
-                        <a href="#о-нас" class="header-link">
+                        <a href="#o-nas" class="header-link">
                             О нас
                         </a>
                     </li>
                     <li class="header-list-item">
-                        <a href="#услуги" class="header-link">
+                        <a href="#uslugi" class="header-link">
                             Услуги
                         </a>
                     </li>
                     <li class="header-list-item">
-                        <a href="#преимущества" class="header-link">
+                        <a href="#preimushestva" class="header-link">
                             Преимущества
                         </a>
                     </li>
                     <li class="header-list-item">
-                        <a href="#размещение" class="header-link">
+                        <a href="#razmeshenie" class="header-link">
                             Размещение
                         </a>
                     </li>
                     <li class="header-list-item">
-                        <a href="#блог" class="header-link">
+                        <a href="#blogg" class="header-link">
                             Блог
                         </a>
                     </li>
                     <li class="header-list-item">
-                        <a href="#контакты" class="header-link">
+                        <a href="#contact" class="header-link">
                             Контакты
                         </a>
                     </li>
                 </ul>
-            </nav>
-            <!-- Почему название класса такое? header-btn может быть оно такое должно быть? соответстветнно ниже, тоже самое -->
-            <button class="btn header btn">
-                Хочу Тур
-            </button>
-            <button class="btn header btn">
-                Обратный звонок
-            </button>
-        </div>
+                <button class="btn head-btn-bottom">
+                    Хочу тур
+                </button>
+                <button class="btn head-btn-bottom">
+                    Обратный звонок
+                </button>
+            </div>
+    </nav>
     </header>
 
     <!-- Блок Спецпредложения -->
 
-    <aside id="articles" class="articles">
+    <aside class="articles section-offset" id="articles">
+        <h2 class="section-aside articles-aside">
+            Спецпредложения
+        </h2>
         <div class="container">
-            <h2 class="section-aside articles-aside">
-                Спецпредложения
-            </h2>
-            <ul class="articles-list">
-                <li class="articles-item">
+            <div class="left-content">
+            <ul class="list-reset articles-list flex">
+                <li class="articles-item1">
                     <article class="blog-preview">
-                        <img src="img/blog-1.jpg" alt="Blog photo 1" class="blog-preview-image">
                         <div class="blog-preview-text">
-                            <h3 class="blog-prewiew-title">
-                                Мальдивские острова
+                            <h3 class="blog-prewiew-title-left">
+                                Мальдивские<br>острова
                             </h3>
-                            <p class="blog-prview-descr">
+                            <p class="blog-preview-descr-left">
                                 от 55000 Р
                             </p>
-                            <!-- тоже самое название класса почему такое? у тебя тут получается 2 класса и 1 одинаковых при этом -->
-                            <button class="btn aside btn">
+                            <button class="btn aside-btn">
                                 Подробнее
                             </button>
                         </div>
                     </article>
                 </li>
-                <li class="articles-item">
+                <li class="articles-item2">
                     <article class="blog-preview">
-                        <img src="img/blog-2.jpg" alt="Blog photo 2" class="blog-preview-image">
                         <div class="blog-preview-text">
-                            <h3 class="blog-prewiew-title">
-                                Горящий тур на&nbsp;остров Крит
+                            <h3 class="blog-prewiew-title-left">
+                                Горящий<br>тур&nbsp;на остров Крит
                             </h3>
-                            <p class="blog-prview-descr">
+                            <p class="blog-preview-descr-left">
                                 от 30000
                             </p>
-                            <!-- такая же шляпа -->
-                            <button class="btn aside btn">
+                            <button class="btn aside-btn">
                                 Подробнее
                             </button>
                         </div>
                     </article>
                 </li>
-                <li class="articles-item">
+            </ul>
+        </div>
+        </div>
+        <div class="right-container">
+            <ul class="list-reset articles-list2 flex">
+                <li class="articles-item3">
                     <article class="blog-preview">
-                        <img src="img/blog-3.jpg" alt="Blog photo 3" class="blog-preview-image">
-                        <div class="blog-preview-text">
-                            <h3 class="blog-prewiew-title">
-                                Номера категории люкс
+                        <div class="blog-preview-text1">
+                            <h3 class="blog-prewiew-title-right">
+                                Номера категории<br>люкс
                             </h3>
-                            <p class="blog-prview-descr">
+                            <p class="blog-preview-descr-right">
                                 от 5000
                             </p>
-                            <button class="btn aside btn">
+                            <button class="btn aside-btn">
                                 Подробнее
                             </button>
                         </div>
@@ -128,79 +132,79 @@
     <!-- Основной контент -->
 
     <main class="main">
-        <!-- классы называются только латиницией ни какие русские названия там не должны быть-->
-        <section id="о-нас" class="о-нас">
+        <section class="o-nas section-offset" id="o-nas">
             <h2 class="blog-header">
                 О нас
             </h2>
-            <!-- классы предполагаю неправильно написаны -->
-            <p class="blog header descr">
+            <p class="blog-header-descr">
                 Идейные соображения высшего порядка, а&nbsp;также сложившаяся структура организации влечёт за&nbsp;собой
-                процесс внедрения и&nbsp;модернизации системы обучения кадров, соответствует насущным потребностям.
-                Идейные
+                процесс<br>внедрения и&nbsp;модернизации системы обучения кадров, соответствует насущным потребностям.
+                Идейные<br>
                 соображения высшего порядка, а&nbsp;также дальнейшее развитие различных форм деятельности представляет
-                собой
-                интересный эксперимент проверки системы обучения кадров, соответствует насущным потребностям. Равным
+                собой<br>
+                интересный эксперимент проверки системы обучения кадров, соответствует насущным потребностям. Равным<br>
                 образом
-                сложившаяся структура организации требуют определения и&nbsp;уточнения существенных финансовых
+                сложившаяся структура организации требуют определения и&nbsp;уточнения существенных финансовых<br>
                 и&nbsp;административных условий.
             </p>
         </section>
-        <!-- id, class должны быть на английском ни какого русского языка -->
-        <section id="услуги" class="услуги">
+
+        <!-- УСЛУГИ -->
+        
+        <section class="uslugi section-offset" id="uslugi">
             <div class="container">
                 <h2 class="section-title articles-title">
                     Услуги
                 </h2>
-                <ul class="articles-list">
-                    <li class="articles-item">
+                <ul class="list-reset articles-list-1 flex">
+                    <li class="articles-item-1">
                         <articles class="blog-preview">
                             <img src="img/blog-image-1.jpg" alt="blog-photo-1" class="blog-preview-image">
-                            <div class="blog-preview-text">
+                            <div class="blog-preview-text-1">
                                 <button class="blog-preview-btn">
                                     Эксклюзивное обслуживание
                                 </button>
-                                <p class="blog-preview-descr">
+                                <p class="blog-preview-descr-1">
                                     Равным образом постоянный количественный рост и&nbsp;сфера нашей активности
                                 </p>
                             </div>
                         </articles>
                     </li>
-                    <li class="articles-item">
+                    <li class="articles-item-1">
                         <articles class="blog-preview">
                             <img src="img/blog-image-2.jpg" alt="blog-photo-2" class="blog-preview-image">
-                            <div class="blog-preview-text">
+                            <div class="blog-preview-text-1">
                                 <button class="blog-preview-btn">
                                     Аренда банкетных залов
                                 </button>
-                                <p class="blog-preview-descr">
+                                <p class="blog-preview-descr-1">
                                     Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм
                                 </p>
                             </div>
                         </articles>
                     </li>
-                    <li class="articles-item">
+                    <li class="articles-item-1">
                         <articles class="blog-preview">
                             <img src="img/blog-image-3.jpg" alt="blog-photo-3" class="blog-preview-image">
-                            <div class="blog-preview-text">
+                            <div class="blog-preview-text-1">
                                 <button class="blog-preview-btn">
                                     Сауны, бассейны, бани, фитнес-залы
                                 </button>
-                                <p class="blog-preview-descr">
+                                <p class="blog-preview-descr-1">
                                     Не&nbsp;следует, однако забывать, что начало повседневной работы
                                     по&nbsp;формированию позиции
                                 </p>
                             </div>
                         </articles>
                     </li>
-                    <li class="articles-item">
+                    <li class="articles-item-1">
                         <articles class="blog-preview">
                             <img src="img/blog-image-4.jpg" alt="blog-photo-4" class="blog-preview-image">
-                            <div class="blog-preview-text">
+                            <div class="blog-preview-text-1">
                                 <button class="blog-preview-btn">
                                     Охраняемые автомобильные стоянки
                                 </button>
-                                <p class="blog-preview-descr">
+                                <p class="blog-preview-descr-1">
                                     Не&nbsp;следует, однако забывать, что начало повседневной работы
                                     по&nbsp;формированию позиции
                                 </p>
@@ -211,15 +215,14 @@
             </div>
         </section>
         <!-- ПРЕИМУЩЕСТВА -->
-        <!-- русское название -->
-        <section id="преимущества" class="преимущества">
+        <section class="preimushestva section-offset" id="preimushestva">
             <div class="container">
                 <h2 class="section-title advantage-title">
                     Преимущества
                 </h2>
-                <ul class="advantage-items">
-                    <li class="advantage-item">
-                        <svg width="64" height="66" viewBox="0 0 64 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <ul class=" list-reset advantage-items flex">
+                    <li class="advantage-item flex">
+                        <svg class="advantage-item-icon" width="64" height="66" viewBox="0 0 64 66" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_370726_458)">
                                 <path
                                     d="M37.95 58.4074H20.2875C11.375 58.4074 4.125 50.9308 4.125 41.7398V25.9359C4.125 24.9047 4.9375 24.0797 5.925 24.0797C6.9125 24.0797 7.725 24.9176 7.725 25.9359V41.7527C7.725 48.8941 13.35 54.6949 20.275 54.6949H37.9375C38.9375 54.6949 39.7375 55.5328 39.7375 56.5512C39.75 57.5824 38.95 58.4074 37.95 58.4074Z"
@@ -282,8 +285,8 @@
                             а&nbsp;также постоянный количественный рост
                         </p>
                     </li>
-                    <li class="advantage-item">
-                        <svg width="67" height="66" viewBox="0 0 67 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <li class="advantage-item flex">
+                        <svg class="advantage-item-icon" width="67" height="66" viewBox="0 0 67 66" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_370726_440)">
                                 <path
                                     d="M40.8281 49.0746H11.0707V35.0625C11.0707 30.0996 15.1535 26.0777 20.1916 26.0777H40.8281V49.0746Z"
@@ -333,8 +336,8 @@
                             Значимость этих проблем настолько очевидна, что вопрос остаётся открытым
                         </p>
                     </li>
-                    <li class="advantage-item">
-                        <svg width="64" height="66" viewBox="0 0 64 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <li class="advantage-item flex">
+                        <svg class="advantage-item-icon" width="64" height="66" viewBox="0 0 64 66" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M58.2375 61.2692H49.4375C48.5 61.2692 47.7375 60.4828 47.7375 59.516C47.7375 58.5492 48.5 57.7629 49.4375 57.7629H58.2375C59.55 57.7629 60.6125 56.6672 60.6125 55.3137V23.4867C60.6125 22.1332 59.55 21.0375 58.2375 21.0375H17.2375C15.925 21.0375 14.8625 22.1332 14.8625 23.4867V55.3395C14.8625 56.693 15.925 57.7887 17.2375 57.7887H40.1125C41.05 57.7887 41.8125 58.575 41.8125 59.5418C41.8125 60.5086 41.05 61.2949 40.1125 61.2949H17.2375C14.0625 61.2949 11.475 58.6266 11.475 55.3524V23.4867C11.475 20.2125 14.0625 17.5442 17.2375 17.5442H58.2375C61.4125 17.5442 64 20.2125 64 23.4867V55.3395C64 58.6008 61.4125 61.2692 58.2375 61.2692Z"
                                 fill="#2D527C" />
@@ -378,8 +381,8 @@
                             Таким образом реализация плановых заданий играет важную роль для понимания
                         </p>
                     </li>
-                    <li class="advantage-item">
-                        <svg width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <li class="advantage-item flex">
+                        <svg class="advantage-item-icon" width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_370726_405)">
                                 <path
                                     d="M38.4527 18.4851H19.207C18.1758 18.4851 17.3379 17.6472 17.3379 16.616C17.3379 15.5847 18.1758 14.7469 19.207 14.7469H38.4527C39.484 14.7469 40.3219 15.5847 40.3219 16.616C40.3219 17.6472 39.484 18.4851 38.4527 18.4851Z"
@@ -426,8 +429,8 @@
                             Повседневная практика показывает, что сложившаяся структура организации
                         </p>
                     </li>
-                    <li class="advantage-item">
-                        <svg width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <li class="advantage-item flex">
+                        <svg class="advantage-item-icon" width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_370726_530)">
                                 <path
                                     d="M15.6364 60.3152H11.1891C10.1966 60.3152 9.39734 59.516 9.39734 58.5234C9.39734 57.5308 10.1966 56.7316 11.1891 56.7316H15.6364C16.629 56.7316 17.4282 57.5308 17.4282 58.5234C17.4282 59.516 16.629 60.3152 15.6364 60.3152Z"
@@ -477,8 +480,8 @@
                             Равным образом рамки и&nbsp;место обучения кадров способствует подготовки сотрудника
                         </p>
                     </li>
-                    <li class="advantage-item">
-                        <svg width="64" height="66" viewBox="0 0 64 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <li class="advantage-item flex">
+                        <svg class="advantage-item-icon" width="64" height="66" viewBox="0 0 64 66" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M54.025 49.7191H9.97503C8.96253 49.7191 8.15002 48.8812 8.15002 47.8371V45.8519C8.15002 32.291 18.85 21.2566 32 21.2566C34.4875 21.2566 36.9375 21.6562 39.2875 22.4296C40.25 22.7519 40.775 23.8089 40.475 24.8015C40.1625 25.7941 39.1375 26.3355 38.175 26.0261C36.1875 25.3687 34.1125 25.0335 32 25.0335C20.8625 25.0335 11.8 34.3793 11.8 45.8648V45.9679H52.2V45.8648C52.2 40.2703 50.075 35.0109 46.225 31.0664C45.5125 30.3316 45.5 29.1457 46.2125 28.398C46.925 27.6632 48.075 27.6503 48.8 28.3851C53.35 33.0386 55.8625 39.239 55.8625 45.8519V47.8371C55.85 48.8812 55.0375 49.7191 54.025 49.7191Z"
                                 fill="#F0BF5F" />
@@ -519,8 +522,8 @@
                             Консультация с&nbsp;активом влечёт за&nbsp;собой процесс внедрения услуг нашего сервиса
                         </p>
                     </li>
-                    <li class="advantage-item">
-                        <svg width="67" height="66" viewBox="0 0 67 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <li class="advantage-item flex">
+                        <svg class="advantage-item-icon" width="67" height="66" viewBox="0 0 67 66" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M60.5094 61.5527H6.49062C2.91816 61.5527 0 58.691 0 55.159V10.841C0 7.30898 2.91816 4.44727 6.49062 4.44727H41.9404C42.9611 4.44727 43.7855 5.25937 43.7855 6.26484C43.7855 7.27031 42.9611 8.08242 41.9404 8.08242H6.49062C4.94648 8.08242 3.69023 9.31992 3.69023 10.841V55.159C3.69023 56.6801 4.94648 57.9176 6.49062 57.9176H60.5094C62.0535 57.9176 63.3098 56.6801 63.3098 55.159V10.841C63.3098 9.31992 62.0535 8.08242 60.5094 8.08242H52.5793C51.5586 8.08242 50.7342 7.27031 50.7342 6.26484C50.7342 5.25937 51.5586 4.44727 52.5793 4.44727H60.5094C64.0949 4.44727 67 7.32187 67 10.841V55.159C67 58.691 64.0818 61.5527 60.5094 61.5527Z"
                                 fill="#2D527C" />
@@ -559,8 +562,8 @@
                             Повседневная практика показывает, что дальнейшее развитие различных
                         </p>
                     </li>
-                    <li class="advantage-item">
-                        <svg width="64" height="66" viewBox="0 0 64 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <li class="advantage-item flex">
+                        <svg class="advantage-item-icon" width="64" height="66" viewBox="0 0 64 66" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_370726_480)">
                                 <path
                                     d="M32.7875 29.5453C31.8 29.5453 30.9875 28.7203 30.9875 27.6891V6.63867C31 3.32578 33.775 0.644531 37.2 0.644531C40.625 0.644531 43.4 3.33867 43.4 6.65156C43.4 7.66992 42.6 8.50781 41.6 8.50781C40.6 8.50781 39.8 7.68281 39.8 6.65156C39.8 5.38828 38.625 4.35703 37.1875 4.35703C35.75 4.35703 34.575 5.38828 34.575 6.65156V27.702C34.5875 28.7074 33.7875 29.5453 32.7875 29.5453Z"
@@ -601,16 +604,26 @@
             </div>
         </section>
         <!-- РАЗМЕЩЕНИЕ -->
-        <section id="размещение" class="размещение">
+        <section class="razmeshenie section-offset" id="razmeshenie">
             <div class="container">
                 <h2 class="section-title placement-title">
                     Размещение
                 </h2>
-                <ul class="placement-list">
-                    <li class="placement-item">
+                <ul class="list-reset placement-list flex">
+                    <li class="placement-item flex">
                         <article class="blog-preview">
                             <img src="img/place-1.jpg" alt="photo-1" class="blog-preview-image">
-                            <div class="blog-preview-text">
+                            <div class="blog-preview-text-2">
+                                <li class="placement-cost flex">
+                                <p class="placement-cost-start">
+                                    от 
+                                </p>
+                                <p class="placement-cost-mid">
+                                    4698 
+                                </p>
+                                <p class="placement-cost-end">
+                                    /ночь
+                                </p>
                                 <span class="blog-preview-star">
                                     <img src="img/star.jpg" alt="Рейтинг отеля 4 из 5">
                                     <img src="img/star.jpg" alt="">
@@ -618,9 +631,7 @@
                                     <img src="img/star.jpg" alt="">
                                     <img src="img/star-no.jpg" alt="">
                                 </span>
-                                <p class="placement-cost">
-                                    от 4698 /ночь
-                                </p>
+                            </li>
                                 <p class="blog-preview-descr">
                                     Lagoona española
                                 </p>
@@ -633,20 +644,28 @@
                             </div>
                         </article>
                     </li>
-                    <li class="placement-item">
+                    <li class="placement-item flex">
                         <article class="blog-preview">
                             <img src="img/place-2.jpg" alt="photo-2" class="blog-preview-image">
-                            <div class="blog-preview-text">
-                                <span class="blog-preview-star">
-                                    <img src="img/star.jpg" alt="Рейтинг отеля 4 из 5">
-                                    <img src="img/star.jpg" alt="">
-                                    <img src="img/star.jpg" alt="">
-                                    <img src="img/star.jpg" alt="">
-                                    <img src="img/star-no.jpg" alt="">
-                                </span>
-                                <p class="placement-cost">
-                                    от 5148 /ночь
-                                </p>
+                            <div class="blog-preview-text-2">
+                                <li class="placement-cost flex">
+                                    <p class="placement-cost-start">
+                                        от 
+                                    </p>
+                                    <p class="placement-cost-mid">
+                                        4698 
+                                    </p>
+                                    <p class="placement-cost-end">
+                                        /ночь
+                                    </p>
+                                    <span class="blog-preview-star">
+                                        <img src="img/star.jpg" alt="Рейтинг отеля 4 из 5">
+                                        <img src="img/star.jpg" alt="">
+                                        <img src="img/star.jpg" alt="">
+                                        <img src="img/star.jpg" alt="">
+                                        <img src="img/star-no.jpg" alt="">
+                                    </span>
+                                </li>
                                 <p class="blog-preview-descr">
                                     Lagoona son t&iacute;picas
                                 </p>
@@ -659,20 +678,29 @@
                             </div>
                         </article>
                     </li>
-                    <li class="placement-item">
+                    <li class="placement-item flex">
                         <article class="blog-preview">
                             <img src="img/place-3.jpg" alt="photo-3" class="blog-preview-image">
-                            <div class="blog-preview-text">
-                                <span class="blog-preview-star">
-                                    <img src="img/star.jpg" alt="Рейтинг отеля 5 из 5">
-                                    <img src="img/star.jpg" alt="">
-                                    <img src="img/star.jpg" alt="">
-                                    <img src="img/star.jpg" alt="">
-                                    <img src="img/star.jpg" alt="">
-                                </span>
-                                <p class="placement-cost">
-                                    от 6254 /ночь
-                                </p>
+                            <div class="blog-preview-text-2">
+                                
+                                <li class="placement-cost flex">
+                                    <p class="placement-cost-start">
+                                        от 
+                                    </p>
+                                    <p class="placement-cost-mid">
+                                        4698 
+                                    </p>
+                                    <p class="placement-cost-end">
+                                        /ночь
+                                    </p>
+                                    <span class="blog-preview-star">
+                                        <img src="img/star.jpg" alt="Рейтинг отеля 5 из 5">
+                                        <img src="img/star.jpg" alt="">
+                                        <img src="img/star.jpg" alt="">
+                                        <img src="img/star.jpg" alt="">
+                                        <img src="img/star.jpg" alt="">
+                                    </span>
+                                </li>
                                 <p class="blog-preview-descr">
                                     Lagoona de&nbsp;la&nbsp;guerra
                                 </p>
@@ -685,20 +713,29 @@
                             </div>
                         </article>
                     </li>
-                    <li class="placement-item">
+                    <li class="placement-item flex">
                         <article class="blog-preview">
                             <img src="img/place-4.jpg" alt="photo-4" class="blog-preview-image">
-                            <div class="blog-preview-text">
-                                <span class="blog-preview-star">
-                                    <img src="img/star.jpg" alt="Рейтинг отеля 5 из 5">
-                                    <img src="img/star.jpg" alt="">
-                                    <img src="img/star.jpg" alt="">
-                                    <img src="img/star.jpg" alt="">
-                                    <img src="img/star.jpg" alt="">
-                                </span>
-                                <p class="placement-cost">
-                                    от 6320 /ночь
-                                </p>
+                            <div class="blog-preview-text-2">
+                                
+                                <li class="placement-cost flex">
+                                    <p class="placement-cost-start">
+                                        от 
+                                    </p>
+                                    <p class="placement-cost-mid">
+                                        4698 
+                                    </p>
+                                    <p class="placement-cost-end">
+                                        /ночь
+                                    </p>
+                                    <span class="blog-preview-star">
+                                        <img src="img/star.jpg" alt="Рейтинг отеля 5 из 5">
+                                        <img src="img/star.jpg" alt="">
+                                        <img src="img/star.jpg" alt="">
+                                        <img src="img/star.jpg" alt="">
+                                        <img src="img/star.jpg" alt="">
+                                    </span>
+                                </li>
                                 <p class="blog-preview-descr">
                                     Lagoona mentira piadosa
                                 </p>
@@ -711,20 +748,29 @@
                             </div>
                         </article>
                     </li>
-                    <li class="placement-item">
+                    <li class="placement-item flex">
                         <article class="blog-preview">
                             <img src="img/place-5.jpg" alt="photo-5" class="blog-preview-image">
-                            <div class="blog-preview-text">
-                                <span class="blog-preview-star">
-                                    <img src="img/star.jpg" alt="Рейтинг отеля 4 из 5">
-                                    <img src="img/star.jpg" alt="">
-                                    <img src="img/star.jpg" alt="">
-                                    <img src="img/star.jpg" alt="">
-                                    <img src="img/star-no.jpg" alt="">
-                                </span>
-                                <p class="placement-cost">
-                                    от 6457 /ночь
-                                </p>
+                            <div class="blog-preview-text-2">
+                                
+                                <li class="placement-cost flex">
+                                    <p class="placement-cost-start">
+                                        от 
+                                    </p>
+                                    <p class="placement-cost-mid">
+                                        4698 
+                                    </p>
+                                    <p class="placement-cost-end">
+                                        /ночь
+                                    </p>
+                                    <span class="blog-preview-star">
+                                        <img src="img/star.jpg" alt="Рейтинг отеля 4 из 5">
+                                        <img src="img/star.jpg" alt="">
+                                        <img src="img/star.jpg" alt="">
+                                        <img src="img/star.jpg" alt="">
+                                        <img src="img/star-no.jpg" alt="">
+                                    </span>
+                                </li>
                                 <p class="blog-preview-descr">
                                     Lagoona empujar la&nbsp;creatividad
                                 </p>
@@ -737,20 +783,29 @@
                             </div>
                         </article>
                     </li>
-                    <li class="placement-item">
+                    <li class="placement-item flex">
                         <article class="blog-preview">
                             <img src="img/place-6.jpg" alt="photo-6" class="blog-preview-image">
-                            <div class="blog-preview-text">
-                                <span class="blog-preview-star">
-                                    <img src="img/star.jpg" alt="Рейтинг отеля 4 из 5">
-                                    <img src="img/star.jpg" alt="">
-                                    <img src="img/star.jpg" alt="">
-                                    <img src="img/star.jpg" alt="">
-                                    <img src="img/star-no.jpg" alt="">
-                                </span>
-                                <p class="placement-cost">
-                                    от 6320 /ночь
-                                </p>
+                            <div class="blog-preview-text-2">
+                                
+                                <li class="placement-cost flex">
+                                    <p class="placement-cost-start">
+                                        от 
+                                    </p>
+                                    <p class="placement-cost-mid">
+                                        4698 
+                                    </p>
+                                    <p class="placement-cost-end">
+                                        /ночь
+                                    </p>
+                                    <span class="blog-preview-star">
+                                        <img src="img/star.jpg" alt="Рейтинг отеля 4 из 5">
+                                        <img src="img/star.jpg" alt="">
+                                        <img src="img/star.jpg" alt="">
+                                        <img src="img/star.jpg" alt="">
+                                        <img src="img/star-no.jpg" alt="">
+                                    </span>
+                                </li>
                                 <p class="blog-preview-descr">
                                     Lagoona el&nbsp;retorno
                                 </p>
@@ -763,20 +818,29 @@
                             </div>
                         </article>
                     </li>
-                    <li class="placement-item">
+                    <li class="placement-item flex">
                         <article class="blog-preview">
                             <img src="img/place-7.jpg" alt="photo-7" class="blog-preview-image">
-                            <div class="blog-preview-text">
-                                <span class="blog-preview-star">
-                                    <img src="img/star.jpg" alt="Рейтинг отеля 5 из 5">
-                                    <img src="img/star.jpg" alt="">
-                                    <img src="img/star.jpg" alt="">
-                                    <img src="img/star.jpg" alt="">
-                                    <img src="img/star.jpg" alt="">
-                                </span>
-                                <p class="placement-cost">
-                                    от 6505 /ночь
-                                </p>
+                            <div class="blog-preview-text-2">
+                               
+                                <li class="placement-cost flex">
+                                    <p class="placement-cost-start">
+                                        от 
+                                    </p>
+                                    <p class="placement-cost-mid">
+                                        4698 
+                                    </p>
+                                    <p class="placement-cost-end">
+                                        /ночь
+                                    </p>
+                                    <span class="blog-preview-star">
+                                        <img src="img/star.jpg" alt="Рейтинг отеля 5 из 5">
+                                        <img src="img/star.jpg" alt="">
+                                        <img src="img/star.jpg" alt="">
+                                        <img src="img/star.jpg" alt="">
+                                        <img src="img/star.jpg" alt="">
+                                    </span>
+                                </li>
                                 <p class="blog-preview-descr">
                                     Lagoona mentira piadosa
                                 </p>
@@ -789,20 +853,29 @@
                             </div>
                         </article>
                     </li>
-                    <li class="placement-item">
+                    <li class="placement-item flex">
                         <article class="blog-preview">
                             <img src="img/place-8.jpg" alt="photo-8" class="blog-preview-image">
-                            <div class="blog-preview-text">
-                                <span class="blog-preview-star">
-                                    <img src="img/star.jpg" alt="Рейтинг отеля 4 из 5">
-                                    <img src="img/star.jpg" alt="">
-                                    <img src="img/star.jpg" alt="">
-                                    <img src="img/star.jpg" alt="">
-                                    <img src="img/star-no.jpg" alt="">
-                                </span>
-                                <p class="placement-cost">
-                                    от 6824 /ночь
-                                </p>
+                            <div class="blog-preview-text-2">
+                                
+                                <li class="placement-cost flex">
+                                    <p class="placement-cost-start">
+                                        от 
+                                    </p>
+                                    <p class="placement-cost-mid">
+                                        4698 
+                                    </p>
+                                    <p class="placement-cost-end">
+                                        /ночь
+                                    </p>
+                                    <span class="blog-preview-star">
+                                        <img src="img/star.jpg" alt="Рейтинг отеля 4 из 5">
+                                        <img src="img/star.jpg" alt="">
+                                        <img src="img/star.jpg" alt="">
+                                        <img src="img/star.jpg" alt="">
+                                        <img src="img/star-no.jpg" alt="">
+                                    </span>
+                                </li>
                                 <p class="blog-preview-descr">
                                     Lagoona suerte sigui&oacute; siempre
                                 </p>
@@ -815,9 +888,8 @@
                             </div>
                         </article>
                     </li>
-                    <li class="placement-item">
-                        <article class="blog-preview">
-                            <img src="img/place-9.jpg" alt="photo-9" class="blog-preview-image">
+                    <li class="placement-item1 flex">
+                        <article class="blog-preview-1">
                             <button class="placement-btn">
                                 Посмотреть все вариатны
                             </button>
@@ -827,11 +899,11 @@
             </div>
         </section>
         <!-- БЛОГ -->
-        <section id="блог" class="блог">
+        <section class="blog-1 section-offset" id="blog-1">
 
         </section>
         <!-- КОНТАКТЫ -->
-        <section id="контакты" class="контакты">
+        <section class="contact section-offset" id="contact">
 
         </section>
     </main>
